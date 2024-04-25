@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-webapp
+spec:
+  ingressClassName: "nginx"
+  rules:
+    - host: lfs09.go4clouds.net
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: webapp
+              port:
+                number: 8080
