@@ -1,0 +1,11 @@
+apiVersion: v2
+name: webapp
+description: WebAPP helm chart
+
+type: application
+
+# Version of helm chart
+version: 0.1.0
+
+# Version of container image
+appVersion: "0.1.0"

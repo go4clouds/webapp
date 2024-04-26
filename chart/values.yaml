@@ -1,0 +1,11 @@
+replicas: 3
+
+imageName: "ghcr.io/go4clouds/webapp"
+
+service:
+  port: 8080
+  targetPort: 80
+  type: ClusterIP
+
+ingress:
+  hostname: web08.go4clouds.net
